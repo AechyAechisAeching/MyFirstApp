@@ -38,9 +38,13 @@ export default function HomeScreen() {
       return;
     }
   }
+    // Creating the todoitem
+  const newTodo: TodoItem = {
+    id:Date.now().toString(),
+    // Generates the iD
+    text: inputText.trim(),
+    completed: false,
+    createdAt: new Date(),
+  };
 
-
-
-
-
-}
+};
